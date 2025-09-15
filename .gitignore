@@ -111,3 +111,4 @@ crashlytics-build.properties
 
 .utmp
 *DoNotShip*
+build
