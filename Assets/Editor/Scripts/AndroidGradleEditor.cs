@@ -23,7 +23,8 @@ class AndroidGradleEditor : IPostGenerateGradleAndroidProject
         // Debug.Log("AndroidGradleEditor.OnPostGenerateGradleAndroidProject currentDir: " + currentDir);
         // FileUtil.ReplaceDirectory("data/unityLibrary", path);
         string sparsePath = path + "/src/main/Il2CppOutputProject/IL2CPP/external/sparsepp/";
-        FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/external/sparsepp/", sparsePath);
+        // FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/external/sparsepp/", sparsePath); // data in root
+        FileUtil.ReplaceFile("Assets/Editor/data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/external/sparsepp/", sparsePath);
 
         // FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/external/sparsepp/", sparsePath);
 
@@ -38,7 +39,9 @@ class AndroidGradleEditor : IPostGenerateGradleAndroidProject
         // FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/external/sparsepp/spp.h", sparsePath + "spp.h");
 
         string utilsPath = path + "/src/main/Il2CppOutputProject/IL2CPP/libil2cpp/utils/";
-        FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppHashMap.h", utilsPath + "Il2CppHashMap.h");
-        FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppHashSet.h", utilsPath + "Il2CppHashSet.h");
+        // FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppHashMap.h", utilsPath + "Il2CppHashMap.h"); // data in root
+        // FileUtil.ReplaceFile("data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppHashSet.h", utilsPath + "Il2CppHashSet.h"); // data in root
+        FileUtil.ReplaceFile("Assets/Editor/data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppHashMap.h", utilsPath + "Il2CppHashMap.h");
+        FileUtil.ReplaceFile("Assets/Editor/data/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/libil2cpp/utils/Il2CppHashSet.h", utilsPath + "Il2CppHashSet.h");
     }
 }
